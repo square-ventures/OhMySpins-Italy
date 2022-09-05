@@ -1,0 +1,265 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+button {
+  background: none;
+  text-decoration: none;
+  text-indent: 0;
+}
+
+body {
+  background-image: url(assets/mobile-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 100vh;
+  color: white;
+}
+
+@media screen and (min-width: 650px) {
+  body {
+    background-image: url(assets/tablet-pr.png);
+  }
+}
+@media screen and (min-width: 1024px) {
+  body {
+    background-image: url(assets/tablet-1024.png);
+  }
+}
+@media screen and (min-width: 1920px) {
+  body {
+    background-image: url(assets/desk-1920.png);
+  }
+}
+@media screen and (min-width: 3000px) {
+  body {
+    background-image: url(assets/desk-4k.png);
+  }
+}
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.wrapper {
+  padding: 30px 0 24px 0;
+  gap: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 650px) {
+  .main-image {
+    margin-top: 60px;
+    width: 560px;
+    height: 391px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .main-image {
+    margin-top: 0px;
+    width: 514px;
+    height: 361px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .main-image {
+    margin-top: 54px;
+    width: 560px;
+    height: 391px;
+  }
+}
+@media screen and (min-width: 2000px) {
+  .main-image {
+    margin-top: 20px;
+    width: 926px;
+    height: 650px;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .logo {
+    width: 180px;
+    height: 100px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .logo {
+    margin-top: 0px;
+    width: 250px;
+    height: 139px;
+  }
+}
+
+.cta-button {
+  margin-bottom: 12px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.cta-button:hover {
+  transform: scale(1.2);
+}
+@media screen and (min-width: 650px) {
+  .cta-button {
+    margin-top: 24px;
+    margin-bottom: 32px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .cta-button {
+    margin: 0 0 8px 0;
+  }
+}
+@media screen and (min-width: 2000px) {
+  .cta-button {
+    width: 369px;
+    height: 88px;
+    margin-bottom: 56px;
+  }
+}
+
+.steps {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 22px;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 650px) {
+  .steps {
+    gap: 30px;
+    margin-bottom: 41px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .steps {
+    margin-bottom: 0px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .steps {
+    margin-bottom: 45px;
+  }
+}
+@media screen and (min-width: 2000px) {
+  .steps {
+    margin-left: 0px;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .step {
+    width: 150px;
+    height: 184px;
+  }
+}
+@media screen and (min-width: 2000px) {
+  .step {
+    width: 339px;
+    height: 99px;
+  }
+}
+
+.payments {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-inline: 20px;
+  width: 100%;
+}
+@media screen and (min-width: 650px) {
+  .payments {
+    max-width: 580px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .payments {
+    margin-bottom: 5px;
+    max-width: 850px;
+  }
+}
+@media screen and (min-width: 2000px) {
+  .payments {
+    margin-bottom: 24px;
+  }
+}
+
+.payment {
+  height: 16px;
+}
+@media screen and (min-width: 650px) {
+  .payment {
+    height: 24px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .terms-button {
+    width: 240px;
+    height: 48px;
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 12px;
+}
+footer p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 16px;
+  padding-inline: 20px;
+  text-align: center;
+}
+@media screen and (min-width: 650px) {
+  footer p {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 40px;
+    max-width: 580px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  footer p {
+    font-size: 11px;
+    line-height: 16px;
+    margin-bottom: 4px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  footer p {
+    max-width: 1740px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+}/*# sourceMappingURL=style.css.map */
